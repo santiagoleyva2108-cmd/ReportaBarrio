@@ -690,4 +690,86 @@ header nav a:hover {
     object-fit: contain;
 }
 
+/* Fondo oscuro del cuadro de confirmación */
+.modal-exito {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.55);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Mostrar el cuadro */
+.modal-exito.mostrar {
+    display: flex;
+}
+
+/* Contenido del cuadro */
+.contenido-exito {
+    background: white;
+    width: 90%;
+    max-width: 400px;
+    padding: 35px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
+    animation: aparecer 0.3s ease;
+}
+
+/* Ícono de éxito */
+.icono-exito {
+    width: 65px;
+    height: 65px;
+    background: #d4edda;
+    color: #164e63;
+    border-radius: 50%;
+    font-size: 42px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.contenido-exito h2 {
+    color: #164e63;
+    margin-bottom: 10px;
+}
+
+.contenido-exito p {
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.contenido-exito button {
+    background: #164e63;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.contenido-exito button:hover {
+    background: #164e63;
+}
+
+/* Animación */
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
 

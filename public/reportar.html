@@ -126,5 +126,32 @@
         <p>ReportaBarrio - Tecnologías Web | ODS 11</p>
     </footer>
 
+    <!-- Cuadro de confirmación -->
+<div id="mensajeExito" class="modal-exito">
+    <div class="contenido-exito">
+        <div class="icono-exito">✓</div>
+
+        <h2>¡Reporte guardado!</h2>
+
+        <p>Tu reporte se registró correctamente.</p>
+
+        <button onclick="cerrarMensaje()">Aceptar</button>
+    </div>
+</div>
+
+<script>
+    const parametros = new URLSearchParams(window.location.search);
+
+    if (parametros.get("exito") === "true") {
+        document.getElementById("mensajeExito").classList.add("mostrar");
+
+        window.history.replaceState({}, document.title, "/reportar.html");
+    }
+
+    function cerrarMensaje() {
+        document.getElementById("mensajeExito").classList.remove("mostrar");
+    }
+</script>
+
 </body>
 </html>

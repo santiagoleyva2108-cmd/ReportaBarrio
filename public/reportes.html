@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportes | ReportaBarrio</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!-- Encabezado y navegación -->
+    <header>
+         <a href="/" class="logo">
+        <img src="/img/logo.png" alt="Logo ReportaBarrio">
+        ReportaBarrio
+    </a>
+
+        <nav>
+            <a href="/">Inicio</a>
+            <a href="/reportar.html">Reportar</a>
+            <a href="/reportes">Reportes</a>
+            <a href="/estadisticas">Estadísticas</a>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+
+        <section class="portada">
+            <h2>Reportes ciudadanos</h2>
+            <p>
+                Consulta los problemas reportados por los habitantes
+                de nuestra comunidad.
+            </p>
+        </section>
+
+        <!-- Filtros de búsqueda -->
+        <section class="seccion-reportes">
+            <h2>Buscar reportes</h2>
+
+            <form action="/reportes" method="GET" class="filtros">
+
+                <div class="campo">
+                    <label for="categoria">Categoría</label>
+                    <select id="categoria" name="categoria">
+                        <option value="">Todas las categorías</option>
+                        <option value="Vías y huecos">Vías y huecos</option>
+                        <option value="Alumbrado público">Alumbrado público</option>
+                        <option value="Residuos y basuras">Residuos y basuras</option>
+                        <option value="Agua y alcantarillado">Agua y alcantarillado</option>
+                        <option value="Espacio público y zonas verdes">Espacio público y zonas verdes</option>
+                        <option value="Seguridad vial">Seguridad vial</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="barrio">Barrio</label>
+                    <input
+                        type="text"
+                        id="barrio"
+                        name="barrio"
+                        placeholder="Escribe el nombre del barrio">
+                </div>
+
+                <button type="submit" class="boton">
+                    Buscar reportes
+                </button>
+
+            </form>
+        </section>
+
+        <!-- Listado de reportes -->
+        <section class="seccion-reportes">
+            <h2>Reportes registrados</h2>
+
+            <div class="contenedor-tarjetas">
+
+                <article class="tarjeta-reporte">
+                    <span class="etiqueta-urgencia alta">Urgencia alta</span>
+                    <h3>Hueco en la vía principal</h3>
+                    <p><strong>Categoría:</strong> Vías y huecos</p>
+                    <p><strong>Barrio:</strong> Ejemplo de barrio</p>
+                    <p>
+                        <strong>Descripción:</strong>
+                        Se presenta un hueco de gran tamaño que dificulta
+                        el tránsito de vehículos.
+                    </p>
+                    <span class="estado">Pendiente</span>
+                </article>
+
+                <article class="tarjeta-reporte">
+                    <span class="etiqueta-urgencia media">Urgencia media</span>
+                    <h3>Alumbrado público dañado</h3>
+                    <p><strong>Categoría:</strong> Alumbrado público</p>
+                    <p><strong>Barrio:</strong> Ejemplo de barrio</p>
+                    <p>
+                        <strong>Descripción:</strong>
+                        Una luminaria permanece apagada durante la noche.
+                    </p>
+                    <span class="estado">Pendiente</span>
+                </article>
+
+                <article class="tarjeta-reporte">
+                    <span class="etiqueta-urgencia baja">Urgencia baja</span>
+                    <h3>Acumulación de residuos</h3>
+                    <p><strong>Categoría:</strong> Residuos y basuras</p>
+                    <p><strong>Barrio:</strong> Ejemplo de barrio</p>
+                    <p>
+                        <strong>Descripción:</strong>
+                        Se observa acumulación de residuos en un espacio público.
+                    </p>
+                    <span class="estado">Pendiente</span>
+                </article>
+
+            </div>
+        </section>
+
+        <aside class="mensaje-comunidad">
+            <h2>Tu participación hace la diferencia</h2>
+            <p>
+                Ayúdanos a construir una comunidad más limpia,
+                segura y sostenible.
+            </p>
+            <a href="/reportar.html" class="boton">
+                Crear un reporte
+            </a>
+        </aside>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2026 ReportaBarrio - Comunidades sostenibles</p>
+        <p>Comprometidos con el ODS 11</p>
+    </footer>
+
+</body>
+</html>

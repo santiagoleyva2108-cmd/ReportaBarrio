@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estadísticas | ReportaBarrio</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!-- Encabezado y menú de navegación -->
+    <header>
+         <a href="/" class="logo">
+        <img src="/img/logo.png" alt="Logo ReportaBarrio">
+        ReportaBarrio
+    </a>
+
+        <nav>
+            <a href="/">Inicio</a>
+            <a href="/reportar.html">Reportar</a>
+            <a href="/reportes">Reportes</a>
+            <a href="/estadisticas">Estadísticas</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Presentación de la página -->
+        <section class="portada">
+            <h2 id="titulo-estadisticas">Estadísticas de la comunidad</h2>
+            <p>
+                Conoce los problemas más frecuentes de nuestro barrio
+                y consulta el estado de los reportes ciudadanos.
+            </p>
+        </section>
+
+        <!-- Resumen general -->
+        <section class="seccion-estadisticas">
+            <h2>Resumen general</h2>
+
+            <div class="resumen-estadisticas">
+
+                <article class="tarjeta-estadistica">
+                    <h3>Total de reportes</h3>
+                    <p class="numero-estadistica">25</p>
+                    <span>Reportes recibidos</span>
+                </article>
+
+                <article class="tarjeta-estadistica">
+                    <h3>Pendientes</h3>
+                    <p class="numero-estadistica">15</p>
+                    <span>Esperando atención</span>
+                </article>
+
+                <article class="tarjeta-estadistica">
+                    <h3>En proceso</h3>
+                    <p class="numero-estadistica">7</p>
+                    <span>En revisión o solución</span>
+                </article>
+
+                <article class="tarjeta-estadistica">
+                    <h3>Resueltos</h3>
+                    <p class="numero-estadistica">3</p>
+                    <span>Problemas solucionados</span>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Estadísticas por categoría -->
+        <section class="seccion-estadisticas">
+            <h2>Reportes por categoría</h2>
+            <p class="descripcion-estadisticas">
+                Distribución de los reportes según el problema identificado.
+            </p>
+
+            <div class="panel-estadisticas">
+
+                <div class="barra-estadistica">
+                    <div class="informacion-barra">
+                        <span>Vías y huecos</span>
+                        <strong>8 reportes</strong>
+                    </div>
+                    <div class="fondo-barra">
+                        <div class="progreso-barra vias"></div>
+                    </div>
+                </div>
+
+                <div class="barra-estadistica">
+                    <div class="informacion-barra">
+                        <span>Alumbrado público</span>
+                        <strong>6 reportes</strong>
+                    </div>
+                    <div class="fondo-barra">
+                        <div class="progreso-barra alumbrado"></div>
+                    </div>
+                </div>
+
+                <div class="barra-estadistica">
+                    <div class="informacion-barra">
+                        <span>Residuos y basuras</span>
+                        <strong>5 reportes</strong>
+                    </div>
+                    <div class="fondo-barra">
+                        <div class="progreso-barra residuos"></div>
+                    </div>
+                </div>
+
+                <div class="barra-estadistica">
+                    <div class="informacion-barra">
+                        <span>Agua y alcantarillado</span>
+                        <strong>3 reportes</strong>
+                    </div>
+                    <div class="fondo-barra">
+                        <div class="progreso-barra agua"></div>
+                    </div>
+                </div>
+
+                <div class="barra-estadistica">
+                    <div class="informacion-barra">
+                        <span>Espacio público y zonas verdes</span>
+                        <strong>2 reportes</strong>
+                    </div>
+                    <div class="fondo-barra">
+                        <div class="progreso-barra espacio"></div>
+                    </div>
+                </div>
+
+                <div class="barra-estadistica">
+                    <div class="informacion-barra">
+                        <span>Seguridad vial</span>
+                        <strong>1 reporte</strong>
+                    </div>
+                    <div class="fondo-barra">
+                        <div class="progreso-barra seguridad"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Estadísticas por urgencia -->
+        <section class="seccion-estadisticas">
+            <h2>Reportes por nivel de urgencia</h2>
+
+            <div class="resumen-urgencias">
+
+                <article class="tarjeta-urgencia urgencia-alta">
+                    <h3>Alta</h3>
+                    <p>10</p>
+                    <span>Requieren atención prioritaria</span>
+                </article>
+
+                <article class="tarjeta-urgencia urgencia-media">
+                    <h3>Media</h3>
+                    <p>9</p>
+                    <span>Requieren seguimiento</span>
+                </article>
+
+                <article class="tarjeta-urgencia urgencia-baja">
+                    <h3>Baja</h3>
+                    <p>6</p>
+                    <span>Requieren atención regular</span>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Mensaje final -->
+        <aside class="mensaje-comunidad">
+            <h2>Un barrio mejor comienza con tu participación</h2>
+            <p>
+                Cada reporte nos ayuda a identificar necesidades
+                y trabajar por una comunidad sostenible.
+            </p>
+            <a href="/reportar.html" class="boton">
+                Registrar un reporte
+            </a>
+        </aside>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2026 ReportaBarrio - Comunidades sostenibles</p>
+        <p>Comprometidos con el ODS 11</p>
+    </footer>
+
+</body>
+</html>

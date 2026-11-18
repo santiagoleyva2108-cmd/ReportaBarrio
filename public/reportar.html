@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReportaBarrio | Crear reporte</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+     <!-- Encabezado y navegación -->
+    <header class="encabezado">
+         <a href="/" class="logo">
+        <img src="/img/logo.png" alt="Logo ReportaBarrio">
+        ReportaBarrio
+    </a>
+
+        <nav class="menu">
+            <a href="/">Inicio</a>
+            <a href="/reportar.html">Reportar</a>
+            <a href="/reportes">Reportes</a>
+            <a href="/estadisticas">Estadísticas</a>
+        </nav>
+    </header>
+
+
+     <!-- Contenido principal -->
+    <main class="contenedor-formulario">
+
+        <section class="formulario-seccion">
+
+            <h1>Reportar un problema</h1>
+
+            <p>
+                Ayúdanos a mejorar tu comunidad.
+                Completa los siguientes datos.
+            </p>
+
+            <form action="/reportes" method="POST">
+
+                <div class="campo">
+                    <label for="titulo">Título del problema</label>
+                    <input
+                        type="text"
+                        id="titulo"
+                        name="titulo"
+                        placeholder="Ej. Hueco en la calle"
+                        required>
+                </div>
+
+                <div class="campo">
+                    <label for="categoria">Categoría</label>
+                    <select id="categoria" name="categoria" required>
+                        <option value="">Selecciona una categoría</option>
+                        <option value="Vías y huecos">Vías y huecos</option>
+                        <option value="Alumbrado público">Alumbrado público</option>
+                        <option value="Residuos y basuras">Residuos y basuras</option>
+                        <option value="Agua y alcantarillado">Agua y alcantarillado</option>
+                        <option value="Espacio público y zonas verdes">Espacio público y zonas verdes</option>
+                        <option value="Seguridad vial">Seguridad vial</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="barrio">Barrio</label>
+                    <input
+                        type="text"
+                        id="barrio"
+                        name="barrio"
+                        placeholder="Nombre de tu barrio"
+                        required>
+                </div>
+
+                <div class="campo">
+                    <label for="descripcion">Descripción del problema</label>
+                    <textarea
+                        id="descripcion"
+                        name="descripcion"
+                        rows="5"
+                        placeholder="Describe lo que está sucediendo..."
+                        required></textarea>
+                </div>
+
+                <fieldset class="campo">
+                    <legend>¿Qué tan urgente es?</legend>
+
+                    <label>
+                        <input type="radio" name="urgencia" value="Baja" required>
+                        Baja
+                    </label>
+
+                    <label>
+                        <input type="radio" name="urgencia" value="Media">
+                        Media
+                    </label>
+
+                    <label>
+                        <input type="radio" name="urgencia" value="Alta">
+                        Alta
+                    </label>
+                </fieldset>
+
+                <div class="campo">
+                    <label for="contacto">Correo electrónico</label>
+                    <input
+                        type="email"
+                        id="contacto"
+                        name="contacto"
+                        placeholder="ejemplo@correo.com"
+                        required>
+                </div>
+
+                <button type="submit" class="boton">
+                    Enviar reporte
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+    
+     <!-- Pie de página -->
+    <footer class="pie">
+        <p>ReportaBarrio - Tecnologías Web | ODS 11</p>
+    </footer>
+
+</body>
+</html>
